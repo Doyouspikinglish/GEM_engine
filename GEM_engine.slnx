@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GEM_engine/GEM_engine.vcxproj" Id="bf10cc48-6e03-4765-a715-e50350c8121e" />
+</Solution>
