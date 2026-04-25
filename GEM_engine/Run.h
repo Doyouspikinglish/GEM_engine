@@ -3,6 +3,7 @@
 #include "Viewport.h"
 
 extern bool IsClickedOn;
+extern Color NewCubeColor;
 
 class Run
 {

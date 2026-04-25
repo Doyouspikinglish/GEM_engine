@@ -17,3 +17,17 @@ bool DekaGui::DrawButton(Button2D button, Color HoverColor)
 	return false;
 }
 
+Color DekaGui::DrawColorPicker(Color color, Vector2 position, Vector2 size)
+{
+	DrawRectangleV(position, size, color);
+	if (CheckCollisionPointRec(GetMousePosition(), {position.x, position.y, size.x, size.y}))
+	{
+		DrawRectangleV(position, size, LIGHTGRAY);
+		if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+		{
+			return GetColor(255);
+		}
+	}
+	DrawRectangleLines(position.x, position.y, size.x, size.y, BLACK);
+	return color;
+}
